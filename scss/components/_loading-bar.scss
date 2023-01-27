@@ -1,0 +1,27 @@
+@use "../base/variables" as *;
+
+.loading-bar {
+    width: 100%;
+    background-color: hsla(var(--bg-loading-bar), 0.5);
+    border-radius: 10px;
+    margin: toRem(16) 0 toRem(8);
+    padding: toRem(3);
+
+    &__progress {
+        width: 75%;
+        height: 100%;
+        background: linear-gradient(90deg, var(--grad-color-2) 0%, var(--grad-color-1) 100%);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: toRem(3);
+    }
+
+    &__shape {
+        width: 10px;
+        height: 10px;
+        background-color: var(--bg-shape);
+        border-radius: 50%;
+    }
+}

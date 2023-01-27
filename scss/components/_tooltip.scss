@@ -1,0 +1,33 @@
+@use "../base/variables" as *;
+
+.tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    padding: toRem(16) 0;
+    position: absolute;
+    background-color: var(--bg-tooltip);
+    border-radius: 10px;
+    left: 50%;
+    top: 77%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
+
+    &__heading {
+        color: var(--text-accent-dark);
+        font-size: toRem(40);
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: toRem(10);
+    }
+
+    &__sub-heading {
+        color: var(--text-accent-grey);
+        font-size: toRem(12);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}

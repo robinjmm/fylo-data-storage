@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="My solution for the Fylo Data Storage Component challenge from Frontendmentor.io">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My solution for the Fylo Data Storage Component challenge from Frontendmentor.io">
 
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 
-	<title>Fylo Data Storage</title>
+    <title>Fylo Data Storage</title>
 </head>
 <body>
 
-You’ve used 815 GB of your storage
+    <main>
+        <div class="card card--options">
+            <img src="/images/logo.svg" alt="Fylo App logo">
 
-185 GB Left
+            <div class="card__buttons-container">
+                <button class="button"><img src="/images/icon-document.svg"></button>
+                <button class="button"><img src="/images/icon-folder.svg"></button>
+                <button class="button"><img src="/images/icon-upload.svg"></button>
+            </div>
+        </div>
 
-0 GB
-1000 GB
-	<script type="module" src="./js/main.js"></script>
+        <div class="card card--info">
+            <div class="card__content">
+                <p class="card__notification">You’ve used <span>815 GB</span> of your storage</p>
+
+                <div class="loading-bar">
+                    <div class="loading-bar__progress">
+                        <div class="loading-bar__shape"></div>
+                    </div>
+                </div>
+
+                <div class="card__storage">
+                    <p>0 GB</p>
+                    <p>1000 GB</p>
+                </div>
+            </div>
+
+            <article class="tooltip">
+                <h2 class="tooltip__heading">185 <span class="tooltip__sub-heading">GB Left</span></h2>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <a href="https://github.com/robinjmm/fylo-data-storage" target="_blank" title="GitHub Repo Link"
+           rel="noopener noreferrer">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>

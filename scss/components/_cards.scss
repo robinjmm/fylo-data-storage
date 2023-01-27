@@ -1,0 +1,49 @@
+@use "../base/variables" as *;
+
+.card {
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    color: var(--text-primary);
+
+    &--options {
+        border-top-right-radius: 100px;
+        padding: toRem(42) toRem(34);
+        box-shadow: 0 6px 4px 1px rgba(0, 0, 0, 0.2);
+        margin-left: 7px;
+        margin-bottom: toRem(18);
+    }
+
+    &--info {
+        position: relative;
+        padding-top: toRem(32);
+        padding-bottom: toRem(52);
+        box-shadow: 0 30px 1px 1px rgba(0, 0, 0, 0.05);
+        margin-right: 7px;
+    }
+
+    &__content {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    &__buttons-container {
+        margin-top: toRem(33);
+        display: flex;
+        gap: toRem(16);
+    }
+
+    &__notification {
+        font-size: toRem(14);
+        text-align: center;
+
+        & span {
+            font-weight: var(--fw-bold);
+        }
+    }
+
+    &__storage {
+        display: flex;
+        justify-content: space-between;
+        font-weight: var(--fw-bold);
+    }
+}

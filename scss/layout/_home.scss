@@ -1,0 +1,20 @@
+@use "../base/variables" as *;
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/bg-mobile.png") no-repeat;
+    background-size: cover;
+    font-family: var(--ff-primary);
+    padding: toRem(80) 0;
+}
+
+main {
+    width: min(90%, 333px);
+}
+
+footer {
+    margin-top: toRem(80);
+}

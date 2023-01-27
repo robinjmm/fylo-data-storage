@@ -1,0 +1,36 @@
+:root {
+    // Font Colors
+    --text-primary: hsl(243, 100%, 93%);
+    --text-accent-grey: hsl(229, 7%, 55%);
+    --text-accent-dark: hsl(229, 57%, 11%);
+
+    // Background Colors
+    --bg-card: hsl(228, 56%, 26%);
+    --bg-button: hsl(229, 57%, 11%);
+    --bg-loading-bar: 229, 57%, 11%;
+    --bg-tooltip: hsl(0, 0%, 100%);
+    --bg-shape: hsl(0, 0%, 100%);
+
+    // Gradient Colors
+    --grad-color-1: hsl(6, 100%, 80%);
+    --grad-color-2: hsl(335, 100%, 65%);
+
+    // Font Families
+    --ff-primary: "Raleway", sans-serif;
+
+    // Font Weights
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+// Convert pixel values to rems
+@function toRem($value) {
+    $remValue: calc(($value / 16) * 1rem);
+    @return $remValue;
+}
+
+// Convert pixels to ems
+@function toEm($value, $context) {
+    $emValue: calc(($value / $context) * 1em);
+    @return $emValue;
+}
