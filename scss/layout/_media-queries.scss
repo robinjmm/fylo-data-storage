@@ -1,0 +1,53 @@
+@use "../base/variables" as *;
+
+@media (min-width: 80rem) {
+    body {
+        background-color: var(--bg-button);
+        background-image: url("/images/bg-desktop.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 350px 540px;
+        width: 920px;
+        column-gap: toRem(30);
+        align-items: end;
+    }
+
+    .card {
+        margin: 0;
+
+        &--info {
+            padding: toRem(32);
+        }
+
+        &__notification {
+            text-align: left;
+        }
+
+        &__content {
+            width: 95%;
+        }
+    }
+
+    .tooltip {
+       top: -30%;
+       right: 50px;
+       left: revert;
+       transform: none;
+
+       &::after {
+           content: "";
+           position: absolute;
+           height: 50px;
+           width: 50px;
+           right: -0.5px;
+           top: 45px;
+           background-color: var(--bg-tooltip);
+           clip-path: polygon(0 0, 100% 100%, 100% 0);
+       }
+    }
+}
